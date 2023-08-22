@@ -22,6 +22,7 @@ function getData(event) {
     users.push(user);
   } else if (form_type.value === "update") {
     users[target_row.value] = user;
+    form_type.value = "create"
   }
 
   showData(users);
